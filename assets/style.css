@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    
+}
+
+.logoBusca {
+    display: flex;
+    align-items: center;
+}
+
+.logoGoogle img{
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+}
+
+.barraDeBusca {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 35rem;
+    color: rgb(174, 174, 174);
+    border: 1px solid rgba(0,0,0,.1);
+    border-radius: 30px;
+}
+
+.barraDeBusca a {
+    text-decoration: none;
+}
+
+.barDeBusca:hover {
+    border: 2px solid rgba(0,0,0,.1);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.1); 
+}
+
+.inputBar {
+    height: 30px;
+    width: 430px;
+    border: 0px;
+}
+
+.lupa {
+    width: 100%;
+    max-width: 25px;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 5px;
+    padding-left: 5px;
+}
+
+.microfone {
+    width: 100%;
+    max-width: 15px;
+    height: auto;
+    margin-left: 10px;
+}
+
+.imgEngrenagem {
+    width: 100%;
+    max-width: 22px;
+    height: auto;
+    margin-left: 10px;
+}
