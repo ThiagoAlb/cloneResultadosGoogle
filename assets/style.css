@@ -104,6 +104,7 @@ header {
 
 .opcoesDeBusca p {
     margin-bottom: 18px;
+    font-size: 0.9rem;
     color: #807F80;
 }
 
@@ -119,6 +120,7 @@ header {
 .ferramentas p{
     margin-left: 80px;
     color: #807F80;
+    font-size: 0.9rem;
 }
 
 .numeroResultado {
