@@ -4,68 +4,91 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    --cinza-Google: #aeaeae;
+    --preto-Google: #0000001a;
+}
+
+a {
+    text-decoration: none;
 }
 
 header {
     display: flex;
-    
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logoBusca {
+.containerLogoSearchBar {
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.containerLogo {
     display: flex;
     align-items: center;
 }
 
-.logoGoogle img{
+.containerLogo img{
     width: 100%;
-    max-width: 150px;
+    max-width: 120px;
     height: auto;
 }
 
-.barraDeBusca {
+.containerSearchBar {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 35rem;
-    color: rgb(174, 174, 174);
-    border: 1px solid rgba(0,0,0,.1);
+    border: 1px solid var(--cinza-Google);
     border-radius: 30px;
+    width: 600px;
+    height: 40px;
+    margin-left: 40px;
 }
 
-.barraDeBusca a {
-    text-decoration: none;
+.containerSearchBar:hover {
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 0px 1px 3px rgba(0,0,0,.1);
 }
 
-.barDeBusca:hover {
-    border: 2px solid rgba(0,0,0,.1);
-    box-shadow: 0px 1px 3px rgba(0,0,0,.1); 
+.containerSearchBar input {
+    margin-left: 14px;
+    width: 500px;
+    border: 0px;  
 }
 
-.inputBar {
-    height: 30px;
-    width: 430px;
-    border: 0px;
+.microfone{
+    width: 18px;
+    margin: 5px;
+    margin-left: 10px;
 }
 
 .lupa {
-    width: 100%;
-    max-width: 25px;
-    height: auto;
-    margin-left: 15px;
-    margin-top: 5px;
-    padding-left: 5px;
-}
-
-.microfone {
-    width: 100%;
-    max-width: 15px;
-    height: auto;
+    width: 30px;
+    margin: 3px;
     margin-left: 10px;
 }
 
-.imgEngrenagem {
-    width: 100%;
-    max-width: 22px;
-    height: auto;
-    margin-left: 10px;
+.containerAppsAvatar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.apps {
+    width: 18px;
+}
+
+.avatar {
+    width: 30px;
+    margin-right: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+}
+
+.opcoesDeBusca {
+    display: flex;
+    gap: 15px;
 }
