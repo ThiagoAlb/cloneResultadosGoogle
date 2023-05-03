@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
     --cinza-Google: #aeaeae;
     --preto-Google: #0000001a;
 }
@@ -31,7 +32,7 @@ header {
 
 .containerLogo img{
     width: 100%;
-    max-width: 120px;
+    width: 120px;
     height: auto;
 }
 
@@ -39,14 +40,15 @@ header {
     display: flex;
     border: 1px solid var(--cinza-Google);
     border-radius: 30px;
-    width: 600px;
+    max-width: 600px;
     height: 40px;
     margin-left: 40px;
+    box-shadow: 1px 1px 5px var(--cinza-Google);
 }
 
 .containerSearchBar:hover {
     border: 1px solid rgba(0,0,0,.1);
-    box-shadow: 0px 1px 3px rgba(0,0,0,.1);
+    box-shadow: 0px 1px 5px var(--cinza-Google)
 }
 
 .containerSearchBar input {
@@ -55,16 +57,18 @@ header {
     border: 0px;  
 }
 
+.containerSearchBar input:focus{
+    outline: none;
+}
+
 .microfone{
     width: 18px;
     margin: 5px;
-    margin-left: 10px;
 }
 
 .lupa {
-    width: 30px;
-    margin: 3px;
-    margin-left: 10px;
+    width: 22px;
+    margin: 8px 10px 0px 10px;
 }
 
 .containerAppsAvatar {
@@ -82,6 +86,10 @@ header {
     margin-right: 50px;
 }
 
+.sectionOpcoesDeBusca {
+    border-bottom: 1px solid #aeaeae;
+}
+
 .container {
     display: flex;
     justify-content: center;
@@ -90,5 +98,63 @@ header {
 
 .opcoesDeBusca {
     display: flex;
-    gap: 15px;
+    margin-left: 30px;
+    gap: 18px;
+}
+
+.opcoesDeBusca p {
+    margin-bottom: 18px;
+    color: #807F80;
+}
+
+#ancora1{
+    border-bottom: 3px solid #3A6BC2;
+}
+
+#todas {
+    color: #3A6BC2;
+    
+}
+
+.ferramentas p{
+    margin-left: 80px;
+    color: #807F80;
+}
+
+.numeroResultado {
+    display: flex;
+    justify-content: center;
+    max-width: 760px;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #858484;
+}
+
+.resultados {
+    margin-top: 15px;
+}
+
+.containerResultados {
+    display: flex;
+    flex-direction: column;
+    max-width: 760px;
+    margin-left: 12rem;
+}
+
+.containerResultados h2 {
+    color: #1A0DAB;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+.containerResultados a {
+    color: #0a5c20;
+}
+
+.containerResultados p {
+    margin: 10px 0px 10px 0px;
+}
+
+.containerResultados div {
+    margin-bottom: 30px;
 }
